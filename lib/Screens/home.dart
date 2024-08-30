@@ -98,7 +98,7 @@ class Home extends StatelessWidget {
 
                             // === scrollable container ===
                             Container(
-                              child: Stack(
+                              child: Column(
                                 children: [
                                   Row(
                                     children: [
@@ -146,7 +146,83 @@ class Home extends StatelessWidget {
                                         ),
                                       ),
                                     ],
-                                  )
+                                  ),
+
+                                  // === SECOND ROW ===
+
+                                  SizedBox(height: 10,),
+
+                                  Row(
+                                    children: [
+                                      Padding(
+                                          padding: EdgeInsets.only(left: 40)),
+                                       Image.asset('assets/images/moonCloud.png'),
+                                      SizedBox(
+                                        width: 30,
+                                      ),
+                                       Image.asset('assets/images/moonCloud.png'),
+                                      
+                                      SizedBox(
+                                        width: 30,
+                                      ),
+                                       Image.asset('assets/images/moonCloud.png'),
+                                      
+                                      SizedBox(
+                                        width: 30,
+                                      ),
+                                       Image.asset('assets/images/moonCloud.png'),
+                                      
+                                    ],
+                                  ),
+                                  
+                                  // === THIRD ROW ===
+                                  Row(
+                                    children: [
+                                      Padding(
+                                          padding: EdgeInsets.only(left: 40)),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ],
                               ),
                             )
