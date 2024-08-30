@@ -47,7 +47,6 @@ class Home extends StatelessWidget {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         stops: [0.0, 0.3, 0.5, 0.7, 1.0],
-
                         colors: [
                           Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
                           Color.fromRGBO(121, 80, 172, 1.0),
@@ -60,6 +59,45 @@ class Home extends StatelessWidget {
                       border: Border.all(
                         color: Color.fromRGBO(108, 74, 171, 1.0),
                       ),
+                    ),
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: [
+                            SizedBox(height: 20), // Adjust spacing as needed
+                            Row(
+                              children: [
+                                Padding(padding: EdgeInsets.only(left: 40)),
+                                Text(
+                                  'Today',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                Padding(padding: EdgeInsets.only(left: 160)),
+                                
+                                Text(
+                                  'July, 21',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 10), // Adjust spacing between text and line
+                            Divider(
+                              color: Colors.grey,
+                              thickness: 1, // Adjust the thickness of the line
+                              // indent: 40, // Space from the left
+                              // endIndent: 40, // Space from the right
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),
