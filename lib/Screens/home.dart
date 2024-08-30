@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:weatherapp/Screens/forecast.dart';
 import 'package:weatherapp/Screens/home.dart';
 
 class Home extends StatelessWidget {
@@ -241,29 +242,39 @@ class Home extends StatelessWidget {
               ],
             ),
             // === ICONS ===
-          SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 Padding(padding: EdgeInsets.only(left: 40)),
                 Icon(
-                    Icons.location_on_outlined,
-                    color: Colors.white,
-                    size: 30,
-                  ),
+                  Icons.location_on_outlined,
+                  color: Colors.white,
+                  size: 30,
+                ),
                 Padding(padding: EdgeInsets.only(left: 100)),
-            
-                  Icon(
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Forecast(),
+                      ),
+                    );
+                  },
+                  child: Icon(
                     Icons.add_circle_outline,
                     color: Colors.white,
                     size: 30,
                   ),
+                ),
                 Padding(padding: EdgeInsets.only(left: 100)),
-                
-                  Icon(
-                    Icons.menu,
-                    color: Colors.white,
-                    size: 30,
-                  ),
+                Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                  size: 30,
+                ),
               ],
             )
           ],
