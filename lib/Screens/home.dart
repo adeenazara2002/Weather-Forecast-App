@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:weatherapp/Screens/home.dart';
 
@@ -64,7 +65,7 @@ class Home extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            SizedBox(height: 20), // Adjust spacing as needed
+                            SizedBox(height: 20),
                             Row(
                               children: [
                                 Padding(padding: EdgeInsets.only(left: 40)),
@@ -77,7 +78,6 @@ class Home extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(padding: EdgeInsets.only(left: 160)),
-                                
                                 Text(
                                   'July, 21',
                                   style: TextStyle(
@@ -88,13 +88,68 @@ class Home extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10), // Adjust spacing between text and line
+                            SizedBox(height: 10),
                             Divider(
                               color: Colors.grey,
-                              thickness: 1, // Adjust the thickness of the line
+                              thickness: 1,
                               // indent: 40, // Space from the left
                               // endIndent: 40, // Space from the right
                             ),
+
+                            // === scrollable container ===
+                            Container(
+                              child: Stack(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Padding(
+                                          padding: EdgeInsets.only(left: 40)),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 35,
+                                      ),
+                                      Text(
+                                        '19 C',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       ],
