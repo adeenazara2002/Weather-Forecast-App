@@ -13,14 +13,14 @@ class SplashScreen extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color.fromRGBO(28, 37, 70, 1.0), // rgba(28,37,70,255)
-              Color.fromRGBO(54, 54, 118, 1.0), // rgba(54,54,118,255)
-              Color.fromRGBO(72, 60, 146, 1.0), // rgba(72,60,146,255)
-              Color.fromRGBO(91, 65, 164, 1.0), // rgba(91,65,164,255)
-              Color.fromRGBO(107, 75, 172, 1.0), // rgba(107,75,172,255)
-              Color.fromRGBO(122, 81, 171, 1.0), // rgba(122,81,171,255)
-              Color.fromRGBO(128, 84, 173, 1.0), // rgba(128,84,173,255)
-              Color.fromRGBO(137, 76, 172, 1.0), // rgba(137,76,172,255)
+              Color.fromRGBO(28, 37, 70, 1.0), 
+              Color.fromRGBO(54, 54, 118, 1.0), 
+              Color.fromRGBO(72, 60, 146, 1.0), 
+              Color.fromRGBO(91, 65, 164, 1.0), 
+              Color.fromRGBO(107, 75, 172, 1.0), 
+              Color.fromRGBO(122, 81, 171, 1.0), 
+              Color.fromRGBO(128, 84, 173, 1.0), 
+              Color.fromRGBO(137, 76, 172, 1.0), 
             ],
           ),
         ),
