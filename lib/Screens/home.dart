@@ -21,8 +21,6 @@ class Home extends StatelessWidget {
               Color.fromRGBO(67, 59, 141, 1.0),
               Color.fromRGBO(84, 63, 158, 1.0),
               Color.fromRGBO(108, 74, 171, 1.0),
-              // Color.fromRGBO(121, 80, 172, 1.0),
-              // Color.fromRGBO(135, 75, 171, 1.0),
             ],
           ),
         ),
@@ -37,7 +35,37 @@ class Home extends StatelessWidget {
                 Image.asset('assets/images/house.png'),
               ],
             ),
-                     ],
+
+            // ==== CONTAINER ====
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    height: 250,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+
+                        colors: [
+                          Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                          Color.fromRGBO(121, 80, 172, 1.0),
+                          Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                          Color.fromRGBO(84, 63, 158, 1.0),
+                          Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                        ],
+                      ),
+                      borderRadius: BorderRadius.circular(40),
+                      border: Border.all(
+                        color: Color.fromRGBO(108, 74, 171, 1.0),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
