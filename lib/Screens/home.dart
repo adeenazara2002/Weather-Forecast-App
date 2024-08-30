@@ -42,7 +42,7 @@ class Home extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    height: 250,
+                    height: 240,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topLeft,
@@ -150,32 +150,38 @@ class Home extends StatelessWidget {
 
                                   // === SECOND ROW ===
 
-                                  SizedBox(height: 10,),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
 
                                   Row(
                                     children: [
                                       Padding(
                                           padding: EdgeInsets.only(left: 40)),
-                                       Image.asset('assets/images/moonCloud.png'),
+                                      Image.asset(
+                                          'assets/images/moonCloud.png'),
                                       SizedBox(
                                         width: 30,
                                       ),
-                                       Image.asset('assets/images/moonCloud.png'),
-                                      
+                                      Image.asset(
+                                          'assets/images/moonCloud.png'),
                                       SizedBox(
                                         width: 30,
                                       ),
-                                       Image.asset('assets/images/moonCloud.png'),
-                                      
+                                      Image.asset(
+                                          'assets/images/moonCloud.png'),
                                       SizedBox(
                                         width: 30,
                                       ),
-                                       Image.asset('assets/images/moonCloud.png'),
-                                      
+                                      Image.asset(
+                                          'assets/images/moonCloud.png'),
                                     ],
                                   ),
-                                  
+
                                   // === THIRD ROW ===
+                                  SizedBox(
+                                    height: 10,
+                                  ),
                                   Row(
                                     children: [
                                       Padding(
@@ -232,6 +238,32 @@ class Home extends StatelessWidget {
                     ),
                   ),
                 ),
+              ],
+            ),
+            // === ICONS ===
+          SizedBox(height: 20,),
+            Row(
+              children: [
+                Padding(padding: EdgeInsets.only(left: 40)),
+                Icon(
+                    Icons.location_on_outlined,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                Padding(padding: EdgeInsets.only(left: 100)),
+            
+                  Icon(
+                    Icons.add_circle_outline,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                Padding(padding: EdgeInsets.only(left: 100)),
+                
+                  Icon(
+                    Icons.menu,
+                    color: Colors.white,
+                    size: 30,
+                  ),
               ],
             )
           ],
