@@ -428,7 +428,7 @@ class _ForecastState extends State<Forecast> {
               children: [
                 Container(
                   margin: EdgeInsets.only(left: 40, right: 40),
-                  height: 180,
+                  height: 150,
                   width: 280,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -443,7 +443,7 @@ class _ForecastState extends State<Forecast> {
                         Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
                       ],
                     ),
-                    borderRadius: BorderRadius.circular(40),
+                    borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                       color: Color.fromRGBO(108, 74, 171, 1.0),
                     ),
@@ -502,34 +502,29 @@ class _ForecastState extends State<Forecast> {
                                   endIndent: 30, // Space from the right
                                 ),
 
+
                                 // === SECOND ROW ===
-
                                 SizedBox(
-                                  height: 10,
-                                ),
-
-                                Row(
-                                  children: [
-                                    Padding(padding: EdgeInsets.only(left: 40)),
-                                    Image.asset('assets/images/moonCloud.png'),
-                                  ],
-                                ),
-
-                                // === THIRD ROW ===
-                                SizedBox(
-                                  height: 10,
+                                  height: 5,
                                 ),
                                 Row(
                                   children: [
-                                    Padding(padding: EdgeInsets.only(left: 40)),
-                                    // Text(
-                                    //   '19 C',
-                                    //   style: TextStyle(
-                                    //     color: Colors.white,
-                                    //     fontSize: 20,
-                                    //     fontWeight: FontWeight.w400,
-                                    //   ),
-                                    // ),
+                                    Padding(padding: EdgeInsets.only(left: 30)),
+                                    Text(
+                                      'See more',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+
+                                    Padding(padding: EdgeInsets.only(left: 140)),
+                              Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.white,
+                                size: 20,
+                              ),
                                   ],
                                 ),
                               ],
