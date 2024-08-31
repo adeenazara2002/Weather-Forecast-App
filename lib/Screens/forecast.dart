@@ -472,9 +472,6 @@ class _ForecastState extends State<Forecast> {
                               ),
                             ],
                           ),
-
-                          // === scrollable container ===
-
                           Container(
                             margin: EdgeInsets.only(top: 10),
                             child: Column(
@@ -502,7 +499,6 @@ class _ForecastState extends State<Forecast> {
                                   endIndent: 30, // Space from the right
                                 ),
 
-
                                 // === SECOND ROW ===
                                 SizedBox(
                                   height: 5,
@@ -518,15 +514,223 @@ class _ForecastState extends State<Forecast> {
                                         fontWeight: FontWeight.w300,
                                       ),
                                     ),
-
-                                    Padding(padding: EdgeInsets.only(left: 140)),
-                              Icon(
-                                Icons.arrow_forward_ios,
-                                color: Colors.white,
-                                size: 20,
-                              ),
+                                    Padding(
+                                        padding: EdgeInsets.only(left: 140)),
+                                    Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.white,
+                                      size: 20,
+                                    ),
                                   ],
                                 ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            // === END ====
+
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 35,
+                  ),
+                  height: 100,
+                  width: 140,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                      colors: [
+                        Color.fromRGBO(28, 37, 70, 1.0), // Lightest shade
+                        Color.fromRGBO(54, 54, 118, 1.0),
+                        Color.fromRGBO(72, 60, 146, 1.0), // Middle shade
+                        Color.fromRGBO(84, 63, 158, 1.0),
+                        Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  child: Stack(
+                    children: [
+                      Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Icon(
+                                Icons.wb_sunny_rounded,
+                                color: Colors.white,
+                                size: 25,
+                              ),
+                              Padding(padding: EdgeInsets.only(left: 5)),
+                              Text(
+                                'SUNRISE',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w200,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Text(
+                                '5:28 AM',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Text(
+                                'Sunset: ',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                              Padding(padding: EdgeInsets.only(left: 5)),
+                              Text(
+                                '7:25 PM',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 10),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Padding(padding: EdgeInsets.only(left: 30)),
+                                  ],
+                                ),
+
+                                // ======
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+
+                // =====
+
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 10,
+                  ),
+                  height: 100,
+                  width: 140,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                      colors: [
+                        Color.fromRGBO(28, 37, 70, 1.0), // Lightest shade
+                        Color.fromRGBO(54, 54, 118, 1.0),
+                        Color.fromRGBO(72, 60, 146, 1.0), // Middle shade
+                        Color.fromRGBO(84, 63, 158, 1.0),
+                        Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  child: Stack(
+                    children: [
+                      Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Icon(
+                                Icons.wb_sunny_rounded,
+                                color: Colors.white,
+                                size: 25,
+                              ),
+                              Padding(padding: EdgeInsets.only(left: 5)),
+                              Text(
+                                'UV INDEX',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w200,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Text(
+                                '4',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Text(
+                                'MODERATE',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              
+                            ],
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 10),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Padding(padding: EdgeInsets.only(left: 30)),
+                                  ],
+                                ),
+
+                                // ======
                               ],
                             ),
                           )
