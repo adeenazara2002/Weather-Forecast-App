@@ -155,7 +155,9 @@ class _ForecastState extends State<Forecast> {
                 ),
 
                 // === BABY CONTAINER 1 ===
-                SizedBox(width: 10,),
+                SizedBox(
+                  width: 10,
+                ),
 
                 Container(
                   height: 160,
@@ -412,8 +414,134 @@ class _ForecastState extends State<Forecast> {
                   size: 25,
                 ),
               ]),
-            )
+            ),
             // ==== MAIN CONTAINER ENDED ====
+
+            // ==== AIR QUALITY CONTAINER START ====
+
+            // ==== CONTAINER ====
+
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(left: 40, right: 40),
+                  height: 180,
+                  width: 280,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                      colors: [
+                        Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                        Color.fromRGBO(121, 80, 172, 1.0),
+                        Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                        Color.fromRGBO(84, 63, 158, 1.0),
+                        Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(40),
+                    border: Border.all(
+                      color: Color.fromRGBO(108, 74, 171, 1.0),
+                    ),
+                  ),
+                  child: Stack(
+                    children: [
+                      Column(
+                        children: [
+                          SizedBox(height: 20),
+                          Row(
+                            children: [
+                              Padding(padding: EdgeInsets.only(left: 30)),
+                              Icon(
+                                Icons.air_outlined,
+                                color: Colors.white,
+                                size: 25,
+                              ),
+                              Padding(padding: EdgeInsets.only(left: 10)),
+                              Text(
+                                'AIR QUALITY',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // === scrollable container ===
+
+                          Container(
+                            margin: EdgeInsets.only(top: 10),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Padding(padding: EdgeInsets.only(left: 30)),
+                                    Text(
+                                      '3-Low Health Risk',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+                                SizedBox(height: 5),
+
+                                Divider(
+                                  color: Color.fromRGBO(63, 56, 134, 1.0),
+                                  thickness: 3,
+                                  indent: 30, // Space from the left
+                                  endIndent: 30, // Space from the right
+                                ),
+
+                                // === SECOND ROW ===
+
+                                SizedBox(
+                                  height: 10,
+                                ),
+
+                                Row(
+                                  children: [
+                                    Padding(padding: EdgeInsets.only(left: 40)),
+                                    Image.asset('assets/images/moonCloud.png'),
+                                  ],
+                                ),
+
+                                // === THIRD ROW ===
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Row(
+                                  children: [
+                                    Padding(padding: EdgeInsets.only(left: 40)),
+                                    // Text(
+                                    //   '19 C',
+                                    //   style: TextStyle(
+                                    //     color: Colors.white,
+                                    //     fontSize: 20,
+                                    //     fontWeight: FontWeight.w400,
+                                    //   ),
+                                    // ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
