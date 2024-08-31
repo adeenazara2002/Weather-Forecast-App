@@ -146,275 +146,383 @@ class _ForecastState extends State<Forecast> {
 
             // ==== MAIN CONTAINER ====
             Container(
-              child: Row(children: [
-                Padding(padding: EdgeInsets.only(left: 10)),
-                Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.white,
-                  size: 25,
-                ),
-
-                // === BABY CONTAINER 1 ===
-                SizedBox(
-                  width: 10,
-                ),
-
-                Container(
-                  height: 160,
-                  width: 80,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [0.0, 0.3, 0.5, 0.7, 1.0],
-                      colors: [
-                        Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
-                        Color.fromRGBO(121, 80, 172, 1.0),
-                        Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
-                        Color.fromRGBO(84, 63, 158, 1.0),
-                        Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(40),
-                    border: Border.all(
-                      color: Color.fromRGBO(108, 74, 171, 1.0),
-                    ),
+  child: Row(
+    children: [
+      Padding(padding: EdgeInsets.only(left: 10)),
+      Icon(
+        Icons.arrow_back_ios,
+        color: Colors.white,
+        size: 25,
+      ),
+      SizedBox(
+        width: 10,
+      ),
+      Expanded(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              // === BABY CONTAINER 1 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
                   ),
-                  child: Stack(children: [
-                    Column(children: [
-                      SizedBox(height: 20),
-                      Container(
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Text(
-                                  '19 C',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            // === SECOND ROW ===
-
-                            SizedBox(
-                              height: 10,
-                            ),
-
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Image.asset('assets/images/moonCloud.png'),
-                              ],
-                            ),
-
-                            // === THIRD ROW ===
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Text(
-                                  '19 C',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ])
-                  ]),
-                ),
-
-                // === BABY CONTAINER 1 ENDED ===
-
-                // === BABY CONTAINER 2 ===
-
-                SizedBox(
-                  width: 10,
-                ),
-
-                Container(
-                  height: 160,
-                  width: 80,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [0.0, 0.3, 0.5, 0.7, 1.0],
-                      colors: [
-                        Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
-                        Color.fromRGBO(121, 80, 172, 1.0),
-                        Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
-                        Color.fromRGBO(84, 63, 158, 1.0),
-                        Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(40),
-                    border: Border.all(
-                      color: Color.fromRGBO(108, 74, 171, 1.0),
-                    ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
                   ),
-                  child: Stack(children: [
-                    Column(children: [
-                      SizedBox(height: 20),
-                      Container(
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Text(
-                                  '19 C',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            // === SECOND ROW ===
-
-                            SizedBox(
-                              height: 10,
-                            ),
-
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Image.asset('assets/images/moonCloud.png'),
-                              ],
-                            ),
-
-                            // === THIRD ROW ===
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Text(
-                                  '19 C',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
                       ),
-                    ])
-                  ]),
-                ),
-                // === BABY CONTAINER 2 ENDED ===
-
-                SizedBox(
-                  width: 10,
-                ),
-                // === BABY CONTAINER 3 ===
-
-                Container(
-                  height: 160,
-                  width: 80,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      stops: [0.0, 0.3, 0.5, 0.7, 1.0],
-                      colors: [
-                        Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
-                        Color.fromRGBO(121, 80, 172, 1.0),
-                        Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
-                        Color.fromRGBO(84, 63, 158, 1.0),
-                        Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
-                      ],
                     ),
-                    borderRadius: BorderRadius.circular(40),
-                    border: Border.all(
-                      color: Color.fromRGBO(108, 74, 171, 1.0),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
+                  ],
+                ),
+              ),
+              SizedBox(width: 10),
+
+              // === BABY CONTAINER 2 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
                   ),
-                  child: Stack(children: [
-                    Column(children: [
-                      SizedBox(height: 20),
-                      Container(
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Text(
-                                  '19 C',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            // === SECOND ROW ===
-
-                            SizedBox(
-                              height: 10,
-                            ),
-
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Image.asset('assets/images/moonCloud.png'),
-                              ],
-                            ),
-
-                            // === THIRD ROW ===
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Row(
-                              children: [
-                                Padding(padding: EdgeInsets.only(left: 15)),
-                                Text(
-                                  '19 C',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
                       ),
-                    ])
-                  ]),
+                    ),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
                 ),
-                // === BABY CONTAINER 3 ENDED ===
-                Padding(padding: EdgeInsets.only(left: 20)),
-                Icon(
-                  Icons.arrow_forward_ios,
-                  color: Colors.white,
-                  size: 25,
+              ),
+              SizedBox(width: 10),
+
+              // === BABY CONTAINER 3 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
+                  ),
                 ),
-              ]),
-            ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(width: 10),
+              
+              // === BABY CONTAINER 4 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+
+               SizedBox(width: 10),
+              
+              // === BABY CONTAINER 5 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+
+               SizedBox(width: 10),
+              
+              // === BABY CONTAINER 6 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+
+               SizedBox(width: 10),
+              
+              // === BABY CONTAINER 7 ===
+              Container(
+                height: 160,
+                width: 80,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.0, 0.3, 0.5, 0.7, 1.0],
+                    colors: [
+                      Color.fromRGBO(135, 75, 171, 1.0), // Lightest shade
+                      Color.fromRGBO(121, 80, 172, 1.0),
+                      Color.fromRGBO(108, 74, 171, 1.0), // Middle shade
+                      Color.fromRGBO(84, 63, 158, 1.0),
+                      Color.fromRGBO(67, 59, 141, 1.0), // Darkest shade
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border.all(
+                    color: Color.fromRGBO(108, 74, 171, 1.0),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Image.asset('assets/images/moonCloud.png'),
+                    SizedBox(height: 10),
+                    Text(
+                      '19 C',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      SizedBox(width: 10),
+      Icon(
+        Icons.arrow_forward_ios,
+        color: Colors.white,
+        size: 25,
+      ),
+    ],
+  ),
+),
+
             // ==== MAIN CONTAINER ENDED ====
 
             // ==== AIR QUALITY CONTAINER START ====
@@ -695,7 +803,7 @@ class _ForecastState extends State<Forecast> {
                           ),
                           Row(
                             children: [
-                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Padding(padding: EdgeInsets.only(left: 20)),
                               Text(
                                 '4',
                                 style: TextStyle(

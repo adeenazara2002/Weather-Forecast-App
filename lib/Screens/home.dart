@@ -98,141 +98,185 @@ class Home extends StatelessWidget {
                             ),
 
                             // === scrollable container ===
-                            Container(
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Padding(
-                                          padding: EdgeInsets.only(left: 40)),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 35,
-                                      ),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 35,
-                                      ),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 35,
-                                      ),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
+                           Container(
+  
+    child: SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Padding(padding: EdgeInsets.only(left: 40)),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
 
-                                  // === SECOND ROW ===
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
 
-                                  SizedBox(
-                                    height: 10,
-                                  ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
 
-                                  Row(
-                                    children: [
-                                      Padding(
-                                          padding: EdgeInsets.only(left: 40)),
-                                      Image.asset(
-                                          'assets/images/moonCloud.png'),
-                                      SizedBox(
-                                        width: 30,
-                                      ),
-                                      Image.asset(
-                                          'assets/images/moonCloud.png'),
-                                      SizedBox(
-                                        width: 30,
-                                      ),
-                                      Image.asset(
-                                          'assets/images/moonCloud.png'),
-                                      SizedBox(
-                                        width: 30,
-                                      ),
-                                      Image.asset(
-                                          'assets/images/moonCloud.png'),
-                                    ],
-                                  ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ],
+          ),
 
-                                  // === THIRD ROW ===
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Row(
-                                    children: [
-                                      Padding(
-                                          padding: EdgeInsets.only(left: 40)),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 35,
-                                      ),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 35,
-                                      ),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 35,
-                                      ),
-                                      Text(
-                                        '19 C',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            )
+          // === SECOND ROW ===
+
+          SizedBox(height: 10),
+
+          Row(
+            children: [
+              Padding(padding: EdgeInsets.only(left: 40)),
+              Image.asset('assets/images/moonCloud.png'),
+              SizedBox(width: 30),
+              Image.asset('assets/images/moonCloud.png'),
+              SizedBox(width: 30),
+              Image.asset('assets/images/moonCloud.png'),
+              SizedBox(width: 30),
+              Image.asset('assets/images/moonCloud.png'),
+              SizedBox(width: 30),
+              Image.asset('assets/images/moonCloud.png'),
+              SizedBox(width: 30),
+              Image.asset('assets/images/moonCloud.png'),             
+              SizedBox(width: 30),
+              Image.asset('assets/images/moonCloud.png'),
+            ],
+          ),
+
+          // === THIRD ROW ===
+          SizedBox(height: 10),
+          Row(
+            children: [
+              Padding(padding: EdgeInsets.only(left: 40)),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              SizedBox(width: 35),
+              Text(
+                '19 C',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ],
+          ),
+
+          
+        ],
+      ),
+    ),
+  
+)
+
                           ],
                         ),
                       ],
